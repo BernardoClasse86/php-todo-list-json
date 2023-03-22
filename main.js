@@ -27,6 +27,31 @@ createApp({
                 })
         },
 
+        addTask() {
+
+            const task = {
+                text: this.newTask,
+                status: true,
+            }
+
+            console.log(this.newTask)
+
+            axios
+                .post('./server.php', task, {
+                    headers: {
+                        'Content-Type': 'multipart/form-data',
+                    },
+                })
+                .then((res) => {
+                    this.toDoList = res.data
+                    console.log(this.toDoList)
+                    this.newTask = ''
+                })
+                .catch((err) => {
+                    console.log(err)
+                })
+        }
+
     },
     mounted() {
         this.fetchToDo()

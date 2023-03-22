@@ -1,7 +1,1 @@
-[
-    "Preparare il pranzo",
-    "Mangiare il pranzo",
-    "Preparare il caffe",
-    "Controllare l'esercizio del giorno su slack",
-    "Iniziare l'esercizio"
-]
+[{"text":"Preparare il pranzo","status":true},{"text":"Mangiare il pranzo","status":true},{"text":"Preparare il caffe","status":true},{"text":"Controllare l'esercizio del giorno su slack","status":true},{"text":"Iniziare l'esercizio","status":true},{"text":"tommi","status":true},{"text":"hello","status":true},{"text":"ciiao","status":true},{"text":"tommi","status":true},{"text":"ciao","status":true}]

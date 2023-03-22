@@ -16,10 +16,14 @@
                 <h1 class="text-xl font-semibold">ToDo List</h1>
             </div>
 
+            <div class="container mx-auto pb-3">
+                <input @keyup.enter="addTask" v-model="newTask" type="text" name="task" placeholder="Add a New task">
+            </div>
+
             <div class="container mx-auto py-3 bg-gradient-to-r from-white via-teal-400 to-white">
                 <ul class="list-none">
-                    <li v-for="task in toDoList" :key="task" class="flex justify-center mb-2 border-4 border-teal-200 border-b-teal-700 text-white p-1">
-                        <p>{{task}}</p>
+                    <li v-for="todo in toDoList" :key="todo" class="flex justify-center mb-2 border-4 border-teal-200 border-b-teal-700 text-white p-1">
+                        <p>{{todo.text}}</p>
                     </li>
                 </ul>
             </div>
